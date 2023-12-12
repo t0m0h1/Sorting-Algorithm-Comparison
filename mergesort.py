@@ -17,6 +17,14 @@ def mergesort(arr):
         mergesort(R)
         i = j = k = 0
         # copy data to temp arrays L[] and R[]
+        while i < len(L) and j < len(R):
+            if L[i] < R[j]:
+                arr[k] = L[i] 
+                i += 1
+            else:
+                arr[k] = R[j]
+                j += 1
+            k += 1
 
 
 
